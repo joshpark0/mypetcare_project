@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mypetcare.demo.dao.SitterDAO">
+
+	<insert id="insert_support_write_petsitter"
+		parameterType="sitter">
+			INSERT INTO mypetcare.sitter(
+			ps_no,
+			ps_activity,
+			ps_score,
+			ps_certificate,
+			ps_area,
+			ps_possibledate,
+			ps_lastpossibledate,
+			ps_introduce,
+			ps_img,
+			ps_smoking,
+			ps_career,
+			ps_size
+			stop_reason
+			)VALUES (
+			1,
+			null,
+			null,
+			#{ps_certificate},
+			#{ps_area},
+			sysdate(),
+			sysdate(),
+			#{ps_introduce},
+			#{ps_img},
+			#{ps_smoking},
+			#{ps_career},
+			null,
+			#{ps_size},
+			null
+			)
+
+	</insert>
+
+</mapper>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+    
